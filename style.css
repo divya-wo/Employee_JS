@@ -1,0 +1,123 @@
+.container{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.header{
+    background-color: rgb(50, 112, 170);
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+}
+label {
+    float: right;
+    padding: 7px;
+    display: inline-block;
+  }
+.col-25{
+    float:left;
+    width:25%;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+  } 
+.row{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:5px;
+  }
+input[type=text]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+input[type=email]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+input[type=number]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+input[type=date]{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+.col-75 button {
+    background-color:  rgb(50, 112, 170);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+input[type=checkbox]{
+    margin:5px;
+}
+.box {
+    border: 1px solid  rgb(50, 112, 170);
+    border-radius: 5px;
+}
+.heading{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color:rgb(68, 65, 65);
+}
+table {
+    width: 100%;
+}
+th,td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.table_data{
+    margin: 10px;
+    overflow-x:auto;
+}
+table, th, td{
+    color:rgb(68, 65, 65);
+    padding: 3px;
+    border-collapse: collapse;
+}
+.edit{
+    background-color:  rgb(50, 112, 170);
+    padding: 3px 20px;
+    margin:1px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display:inline;
+}
+@media screen and (max-width:1224px) {
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-25, .col-75 { width: 100%; }
+    label{float:left;}
+    }

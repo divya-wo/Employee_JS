@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">Employee</div>
+        <div class="header">
+            Add Employee
+        </div>
+        <div class="box">
+            <form id="employeeForm">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <div>
+                            <input type="text" name="name" placeholder="Enter Name" id="name" required />
+                            <span id="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Gender</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" name="gender" id="Male" value="Male" checked="checked"> Male
+                        <input type="radio" name="gender" id="Female" value="Female"> Female
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dob">Date of Birth:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="dob" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" required placeholder="Enter Email">
+                        <span id="emailError"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Phone:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="phone" title="Please enter a 10-digit phone number"
+                            placeholder="Enter Phone ">
+                        <span id="phoneError"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Hobbies:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="checkbox" name="hobbies" value="Cricket"> Cricket
+                        <br>
+                        <input type="checkbox" name="hobbies" value="Chess"> Chess
+                        <br>
+                        <input type="checkbox" name="hobbies" value="Music"> Music
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <br>
+                    </div>
+                    <div class="col-75">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+                <input type="hidden" id="editUpdate" value="" />
+            </form>
+        </div>
+        <div class="heading">Basic</div>
+        <div class="header">
+            Display
+        </div>
+        <div class="box">
+            <div class="table_data">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Hobbies</th>
+                        <th>Action</th>
+                    </tr>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="heading">Advance</div>
+        <div class="header">Display</div>
+        <div class="box">
+            <div class="table_data">
+                <table id="verticalTable">
+                    <tbody id="verticalTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
